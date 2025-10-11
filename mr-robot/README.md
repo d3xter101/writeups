@@ -242,7 +242,9 @@ The output :
 #### Interpretation
 
 As we can see we have some interesting endpoints like */robots.txt* : 
+
 ![screenshot](https://raw.githubusercontent.com/d3xter101/writeups/refs/heads/main/mr-robot/screenshots/Screenshot%202025-10-11%20161236.png)
+
 When we accessed the file it returns : *073403c8a58a1f80d943455fb30724b9* 
 which is the first flag to submit. 
 I checked the fsociety.dic nothing important 
