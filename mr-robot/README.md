@@ -1,4 +1,3 @@
-# Mr ROBOT CTF 
 ## Resources
 
 Only an IP address : 10.10.8.46
@@ -22,10 +21,11 @@ I tried commands nothing special :
 ![Patriot](https://raw.githubusercontent.com/d3xter101/writeups/refs/heads/main/mr-robot/screenshots/Screenshot%202025-10-11%20151803.png)
 
 **Let's get back to the command fsociety**: 
-	It shows a video but when we *refresh*, it show an interesting interface probably a WordPress interface let's dig thro it more  : 
-		![screenshot](https://raw.githubusercontent.com/d3xter101/writeups/refs/heads/main/mr-robot/screenshots/Screenshot%202025-10-11%20152433.png)
-		and to confirm that when i clicked the login it redirects to wordpress panel login.
+It shows a video but when we *refresh*, it show an interesting interface probably a WordPress interface let's dig thro it more  : 
 
+![screenshot](https://raw.githubusercontent.com/d3xter101/writeups/refs/heads/main/mr-robot/screenshots/Screenshot%202025-10-11%20152433.png)
+
+and to confirm that when i clicked the login it redirects to wordpress panel login.
 ### Scanning 
 
 Let's move to some active engagement with the server using 
@@ -253,7 +253,9 @@ I checked the fsociety.dic nothing important
 From the directory bruteforce we have */license* ,
 it shows : what you do just pull code from Rapid9 or some s@#% since when did you become a script kitty?
 i struggled for about an hour and them I observed that there's more in that page viewing the source code helped : 
+
 ![dump screen](https://raw.githubusercontent.com/d3xter101/writeups/refs/heads/main/mr-robot/screenshots/Screenshot%202025-10-11%20162913.png)
+
 as u see nothing but when I scrolled down I found a base64 code : ZWxsaW90OkVSMjgtMDY1Mgo=
 
 First let's create a file to contain the base64 code : 
@@ -278,6 +280,7 @@ elliot:ER28-0652
 
 --- 
 So now we have a user and a probable password, I tried connecting over SSH but it doesn't work, I jumped directly to test and it worked I actually logged in as eliot in the wordpress panel : 
+
 ![SCREENSHOT](https://raw.githubusercontent.com/d3xter101/writeups/refs/heads/main/mr-robot/screenshots/Screenshot%202025-10-11%20163711.png)
 
 Let's have some fun now ! 
@@ -286,6 +289,7 @@ A common exploit in WordPress is tampering with hardcoded php files to get a rev
 ### Exploiting
 
 Here we have the editor : 
+
 ![screenshot](https://raw.githubusercontent.com/d3xter101/writeups/refs/heads/main/mr-robot/screenshots/Screenshot%202025-10-11%20164222.png)
 
 --- 
