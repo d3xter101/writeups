@@ -10,7 +10,7 @@ rustscan -a <Target-IP>
 
 And here is the result : 
 
-![[Pasted image 20260311230612.png]]
+![[./Pasted image 20260311230612.png]]
 As we can see **Rustscan** didn't gave us much info but it gave us the open port fast enough to proceed to **Nmap** : 
 
 ``` shell
