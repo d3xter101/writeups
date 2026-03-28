@@ -97,7 +97,7 @@ and here is the result :
 
 Interesting we have the code now for the index page let's have a look at it quickly and see what causing the LFI : 
 
-``` php
+``` phtml
 <!DOCTYPE HTML>
 <html>
 
